@@ -1,0 +1,14 @@
+<!-- <p>profile works!</p> -->
+
+<main>
+  <p>Name: {{ firstName }}</p>
+  <p>Age: {{ age }}</p>
+
+  <section class="input_section">
+    <input type="text" placeholder="Tell us About You..." [(ngModel)]="myBio" />
+    <b>
+      Characters in the bio: <span>{{ myBio.length }}</span></b
+    >
+  </section>
+  <button (click)="resetBioText()">Reset Btn</button>
+</main>
