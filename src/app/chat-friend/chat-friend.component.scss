@@ -1,3 +1,19 @@
+article {
+  height: 500px;
+  width: 400px;
+  background-color: violet;
+  border: 2px solid black;
+  position: relative;
+}
+
+p {
+  background-color: skyblue;
+  color: white;
+  text-wrap: wrap;
+}
+.friend {
+  background-color: red;
+}
 input {
   padding: 10px;
   outline: none;
@@ -5,7 +21,7 @@ input {
   border-radius: 10px;
   background-color: skyblue;
   color: #000080;
-  width: 200px;
+  width: 400px;
   height: 50px;
 }
 button {

@@ -1,0 +1,19 @@
+<section>
+  <article>
+    <p class="friend" *ngIf="recieved !== ''">Friend: {{ recieved }}</p>
+    <p >{{ sentMessage }}</p>
+  </article>
+  <section>
+    <input
+      type="text"
+      placeholder="Send a message"
+      [(ngModel)]="inputMessage"
+      (keyup.enter)="sendMessage()"
+      #messageInput
+    />
+  </section>
+  <button class="send" (click)="sendMessage()">Send</button>
+  <button (click)="addEmojy('🤣')">🤣</button>
+  <button (click)="addEmojy('🥵')">🥵</button>
+  <button (click)="addEmojy('💋')">💋</button>
+</section>

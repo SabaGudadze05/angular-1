@@ -1,0 +1,12 @@
+<p>board works!</p>
+<section>
+  <app-chat-you
+    [recieved] ="messageFromFriend"
+    (SendMessageFromMe)="yourSend($event)"
+  >
+  </app-chat-you>
+  <app-chat-friend
+    [recieved]="messageFromMe"
+    (SendMessageFromFriend)="friendSend($event)"
+  ></app-chat-friend>
+</section>

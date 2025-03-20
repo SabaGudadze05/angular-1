@@ -1,0 +1,24 @@
+<main>
+  <b>Count: {{ countNumber }}</b>
+  <section class="button">
+    <button
+      type="button"
+      [ngClass]="minusButton"
+      class="btn"
+      (click)="minusMethod()"
+    >
+      -
+    </button>
+    <button type="button" class="btn btn-outline-secondary" (click)="reset()">
+      Reset
+    </button>
+    <button
+      type="button"
+      [ngClass]="plusButton"
+      class="btn"
+      (click)="plusMethod()"
+    >
+      +
+    </button>
+  </section>
+</main>
